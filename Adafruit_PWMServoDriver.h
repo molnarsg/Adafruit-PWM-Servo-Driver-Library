@@ -84,7 +84,8 @@ public:
   void setExtClk(uint8_t prescale);
   void setPWMFreq(float freq);
   void setOutputMode(bool totempole);
-  uint8_t getPWM(uint8_t num);
+  uint8_t getPWM_old(uint8_t num);
+  uint16_t getPWM(uint8_t num);
   uint8_t setPWM(uint8_t num, uint16_t on, uint16_t off);
   void setPin(uint8_t num, uint16_t val, bool invert = false);
   uint8_t readPrescale(void);
